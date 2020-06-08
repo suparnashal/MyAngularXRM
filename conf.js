@@ -7,6 +7,9 @@ exports.config = {
     browserName: 'firefox'
   },
 
+  onPrepare: function () {
+    require('./waitReady.js');
+},
   // Spec patterns are relative to the configuration file location passed
   // to protractor (in this example conf.js).
   // They may include glob patterns.
